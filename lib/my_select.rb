@@ -5,7 +5,7 @@ def my_select(collection)
  while i < collection.length
   yield(collection[i])
    i = i + 1
-   evens << collections[i]
+   evens << collection[i]
  end
  evens
 end

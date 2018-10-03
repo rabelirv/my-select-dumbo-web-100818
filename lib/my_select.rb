@@ -3,9 +3,10 @@ def my_select(collection)
  i = 0 
  evens = []
  while i < collection.length
-  yield(collection[i])
+  if yield(collection[i])
    i = i + 1
    evens << collection[i]
+ end 
  end
  evens
 end

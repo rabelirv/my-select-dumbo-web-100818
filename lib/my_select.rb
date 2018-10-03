@@ -4,9 +4,9 @@ def my_select(collection)
  evens = []
  while i < collection.length
   if yield(collection[i])
-   i = i + 1
    evens << collection[i]
  end 
+ i = i + 1
  end
  evens
 end
